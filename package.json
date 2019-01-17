@@ -1,0 +1,8 @@
+{
+  "name": "paint-timing",
+  "version": "1.0.0",
+  "description": "browser performance paint timing api",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false
+}
