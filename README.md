@@ -1,4 +1,5 @@
-# Paint Timing API
+# Browser Performance Paint Timing
+JavaScript library for measuring Paint Timings in the browser that supports.
 
 ## Usage 
 
