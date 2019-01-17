@@ -1,8 +1,20 @@
 {
   "name": "paint-timing",
   "version": "1.0.0",
-  "description": "browser performance paint timing api",
-  "main": "index.js",
+  "description": "browser performance paint timings",
+  "main": "src/paint-timings.js",
+  "scripts": {
+    "test": "",
+    "build": "terser -c -m -o dist/paint-timing.min.js src/paint-timing.js"
+  },
+  "devDependencies": {
+    "terser": "^3.14.1"
+  },
+  "repository": "git@github.com:samarpanda/paint-timing.git",
+  "author": "Samar Panda <er.samarpanda@gmail.com>",
   "license": "MIT",
-  "private": false
+  "bugs": {
+    "url": "https://github.com/samarpanda/paint-timing/issues"
+  },
+  "homepage": "https://github.com/samarpanda/paint-timing"
 }

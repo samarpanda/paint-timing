@@ -17,8 +17,6 @@
       pTimingArr = performance.getEntriesByType('paint');
       fp = pTimingArr[0].startTime;
       fcp = pTimingArr[0].startTime;
-    } else {
-      console.log(`PerformancePaintTiming: ${'PerformancePaintTiming' in window}`)
     }
 
     if(listenerAdded)
