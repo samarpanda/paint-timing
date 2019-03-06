@@ -5,7 +5,7 @@
   "main": "src/paint-timings.js",
   "scripts": {
     "test": "",
-    "build": "terser -c -m -o dist/paint-timing.min.js src/paint-timing.js"
+    "build": "terser -c -m -o dist/pt.min.js src/pt.js"
   },
   "devDependencies": {
     "terser": "^3.14.1"
