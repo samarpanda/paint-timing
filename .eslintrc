@@ -5,5 +5,10 @@
   },
   "extends": [
     "eslint:recommended"
-  ]
+  ],
+  "rules": {},
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  }
 }

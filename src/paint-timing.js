@@ -11,21 +11,21 @@ export function onPaintCaptured(callback){
 
 function initCalculate(){
   if(paintTimingIsSupported()){
-    pTimingArr = p.getEntriesByType('paint');
+    pTimingArr = performance.getEntriesByType('paint');
     fp = pTimingArr[0].startTime;
     fcp = pTimingArr[0].startTime;
   }
 
   if(listenerAdded){
-    w.removeEventListener('load', initCalculate);
+    window.removeEventListener('load', initCalculate);
   }
   reportPaintTimings();
 }
 
 function paintTimingIsSupported(){
-  return 'performance' in w
-      && 'PerformancePaintTiming' in w 
-      && p.getEntriesByType('paint').length > 0;
+  return 'performance' in window
+      && 'PerformancePaintTiming' in window
+      && performance.getEntriesByType('paint').length > 0;
 }
 
 function reportPaintTimings(){
@@ -37,9 +37,9 @@ function reportPaintTimings(){
   }
 }
 
-if(d.readyState !== undefined && d.readyState === LOAD_COMPLETE){
+if(document.readyState !== undefined && document.readyState === LOAD_COMPLETE){
   initCalculate();
 }else{
   listenerAdded = true
-  w.addEventListener('load', initCalculate)
+  window.addEventListener('load', initCalculate);
 }

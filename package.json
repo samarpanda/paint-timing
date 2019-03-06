@@ -8,6 +8,7 @@
     "build": "terser -c -m -o dist/pt.min.js src/pt.js"
   },
   "devDependencies": {
+    "eslint": "^5.15.1",
     "terser": "^3.14.1"
   },
   "repository": "git@github.com:samarpanda/paint-timing.git",
