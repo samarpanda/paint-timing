@@ -5,7 +5,9 @@
   "main": "src/paint-timings.js",
   "scripts": {
     "test": "",
-    "build": "terser -c -m -o dist/pt.min.js src/pt.js"
+    "build": "npm run lint && npm run generate",
+    "lint": "eslint .",
+    "generate": "terser -c -m -o dist/pt.min.js src/pt.js"
   },
   "devDependencies": {
     "eslint": "^5.15.1",
